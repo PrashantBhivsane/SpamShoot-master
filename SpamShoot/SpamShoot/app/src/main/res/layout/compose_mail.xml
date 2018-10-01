@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:padding="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+
+            <EditText
+                android:id="@+id/frmMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:ems="10"
+                android:hint="From "
+                android:inputType="textEmailAddress"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/toMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/frmMail"
+                android:ems="10"
+                android:hint="To"
+                android:inputType="textPersonName"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/msgMail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nav_header_height"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/subjMail"
+                android:layout_marginBottom="91dp"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="Compose"
+                android:inputType="text"
+                android:padding="20dp"
+                android:singleLine="false"
+                android:textAlignment="viewStart" />
+
+            <EditText
+                android:id="@+id/subjMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toMail"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:hint="Subject"
+                android:inputType="textPersonName"
+                android:padding="20dp" />
+
+            <Button
+                android:id="@+id/sendMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Send !" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="classify.spam.dexter.firebase_auth_spam_detect.DetailActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/detailText"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_toStartOf="@+id/imageView5"
+                android:gravity="center_vertical"
+                android:padding="0dp"
+                android:paddingBottom="0dp"
+                android:paddingEnd="0dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="0dp"
+                android:paddingStart="0dp"
+                android:paddingTop="0dp"
+                android:text="Arya Stark is in Winterfell !"
+                android:textColor="@color/bg_circle_default"
+                android:textColorLink="@color/common_google_signin_btn_text_dark_focused"
+                android:textIsSelectable="false"
+                android:textSize="18sp"
+                android:typeface="normal" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="5dp"
+                android:padding="0dp"
+                app:srcCompat="@drawable/ic_star_border_black_24dp" />
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cardView4">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cdtwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cardView4"
+        android:layout_below="@+id/cardView4"
+        android:layout_margin="3dp"
+        android:padding="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/cardView4"
+            android:layout_margin="0dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/detailMenu"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/detailSend"
+                app:srcCompat="@drawable/ic_dots" />
+
+            <ImageView
+                android:id="@+id/detailSend"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                app:srcCompat="@drawable/ic_menu_send"
+                android:layout_above="@+id/detailTo"
+                android:layout_toStartOf="@+id/detailMenu" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/detailTo"
+                android:layout_alignParentStart="true"
+                android:padding="1dp"
+                app:srcCompat="@drawable/bg_circle" />
+
+            <TextView
+                android:id="@+id/detailSender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/detailText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="26dp"
+                android:layout_toEndOf="@+id/imageView3"
+                android:padding="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="2dp"
+                android:paddingTop="5dp"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                tools:text="theprashantb@spamshoot.com" />
+
+            <TextView
+                android:id="@+id/detailTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/detailSender"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/imageView3"
+                android:padding="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="2dp"
+                android:paddingTop="5dp"
+                android:text="TextView"
+                tools:text="to Arya Stark" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/detailsTo"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/detailSender"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_toEndOf="@+id/imageView3"-->
+            <!--android:padding="5dp"-->
+            <!--android:text="branstark@spamshoot.com"-->
+            <!--android:textStyle="bold" />-->
+
+            <TextView
+                android:id="@+id/detailMessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/detailSender"
+                android:layout_marginTop="50dp"
+                android:padding="5dp"
+                android:text="Hello,\n\n\nWe have reviewed your account and have concluded that it is not in Violation of our terms and Conditions. Enjoy !\n\nSincerely,\nThe SpamShoot Team"
+                android:typeface="sans" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
